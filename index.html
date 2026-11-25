@@ -3,62 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Entenda a nuvem com exemplos do Drive, GitHub e Render e veja como publicar seu primeiro site." />
-    <title>Nuvem na prática — Guia de estudo</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#162d27" />
+    <meta name="description" content="Intervalo: um conceito de cafeteria com cafés, lanches e uma pausa bem servida." />
+    <title>Intervalo — café e pausa</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Imbue:opsz,wght@10..100,400;10..100,500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <main>
-      <section class="cover" aria-labelledby="page-title">
-        <div class="sheet cover-sheet">
-          <div class="sheet-top"><span>Computação em nuvem</span><span>ETEC · MTEC</span></div>
-          <h1 id="page-title">Nuvem<br />na prática.</h1>
-          <p>Do arquivo salvo no Drive ao primeiro site no Render: um caminho simples para entender como a nuvem funciona.</p>
-          <div class="cover-bottom"><a class="button" href="#intro-title">Começar a ler <span aria-hidden="true">↗</span></a></div>
-        </div>
-      </section>
+    <div class="site-layout">
+      <aside class="photo-stage" aria-label="Café e pão de queijo">
+        <img src="hero-cafe.png" alt="Café espresso e pães de queijo sobre um balcão verde" width="1024" height="1536" />
+        <div class="photo-caption"><span>Uma pausa, por favor.</span><span>Intervalo · café</span></div>
+      </aside>
 
-      <section class="intro wrap" aria-labelledby="intro-title">
-        <h2 id="intro-title">Você já usa a nuvem.</h2>
-        <p>Quando abre um trabalho salvo no Drive pelo celular, usa um serviço que guarda seus arquivos na internet. Com um site acontece algo parecido: os arquivos ficam disponíveis em um servidor para qualquer pessoa acessar pelo link.</p>
-        <div class="facts" aria-label="Ideias principais">
-          <div><strong>Drive</strong><span>Guarda seus arquivos para abrir em outros dispositivos.</span></div>
-          <div><strong>GitHub</strong><span>Guarda o código e registra cada mudança do projeto.</span></div>
-          <div><strong>Render</strong><span>Publica o site e atualiza quando chega código novo.</span></div>
-        </div>
-      </section>
+      <div class="page-column">
+        <header class="site-header">
+          <a class="brand" href="#inicio" aria-label="Intervalo, voltar ao início"><span class="pause-mark" aria-hidden="true"><i></i><i></i></span>intervalo<span class="brand-dot">.</span></a>
+          <nav aria-label="Navegação principal"><a href="#cardapio">Cardápio</a><a href="#contato">Contato</a></nav>
+        </header>
 
-      <section id="roteiro" class="route" aria-labelledby="route-title">
-        <div class="sheet route-sheet">
-          <p class="sheet-kicker">Agora é sua vez</p>
-          <h2 id="route-title">Do código ao link</h2>
-          <ol>
-            <li><div><h3>Monte a página</h3><p>Comece com HTML, CSS e JavaScript. Abra o arquivo no navegador e veja o que precisa ajustar.</p></div><span>01</span></li>
-            <li><div><h3>Envie ao GitHub</h3><p>Crie um repositório e faça commits para guardar as mudanças do site.</p></div><span>02</span></li>
-            <li><div><h3>Publique no Render</h3><p>Conecte o repositório e confira o endereço público do seu site.</p></div><span>03</span></li>
-          </ol>
-          <p class="route-end">Depois, mude uma frase, faça push e veja o Render atualizar a página.</p>
-        </div>
-      </section>
+        <main>
+          <section class="hero" id="inicio" aria-labelledby="hero-title">
+            <h1 id="hero-title">Uma pausa<br />bem servida.</h1>
+            <p class="hero-copy">Café passado na hora, pão de queijo quentinho e tempo para respirar entre uma tarefa e outra.</p>
+            <a class="text-link" href="#cardapio">Escolher minha pausa <span aria-hidden="true">↗</span></a>
+          </section>
 
-      <section id="contato" class="contact" aria-labelledby="contact-title">
-        <div class="wrap contact-layout">
-          <div><p class="sheet-kicker">Teste o formulário</p><h2 id="contact-title">Ficou alguma dúvida?</h2><p>Preencha os campos para testar a validação. O site avisa se faltar alguma coisa ou se o e-mail estiver errado. A mensagem não é enviada.</p></div>
-          <form id="contact-form" novalidate>
-            <label for="name">Nome</label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small>
-            <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small>
-            <label for="message">Mensagem</label><textarea id="message" name="message" rows="5" required></textarea><small id="message-error" class="error"></small>
-            <button class="button" type="submit">Validar mensagem <span aria-hidden="true">↗</span></button>
-            <p id="form-status" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </section>
-    </main>
-    <footer><span>Projeto de estudo · ETEC MTEC</span><a href="#page-title">Voltar ao início ↑</a></footer>
+          <section class="intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Café sem pressa.</h2>
+            <p>O Intervalo é uma cafeteria imaginada para aquela parte do dia em que tudo o que você quer é sentar, tomar um café e conversar um pouco.</p>
+            <p>O cardápio é curto de propósito: bebidas conhecidas, lanches sem complicação e espaço para escolher com calma.</p>
+          </section>
+
+          <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
+            <div class="section-heading"><h2 id="menu-title">Cardápio</h2><p>O que combina com a sua pausa?</p></div>
+            <div class="menu-filters" role="group" aria-label="Filtrar cardápio">
+              <button class="active" type="button" data-filter="todos" aria-pressed="true">Tudo</button>
+              <button type="button" data-filter="cafes" aria-pressed="false">Cafés</button>
+              <button type="button" data-filter="comidas" aria-pressed="false">Para comer</button>
+              <button type="button" data-filter="gelados" aria-pressed="false">Gelados</button>
+            </div>
+            <p class="menu-count" id="menu-count" role="status" aria-live="polite">9 opções no cardápio</p>
+            <div class="menu-list">
+              <article class="menu-item" data-kind="cafes"><div><h3>Espresso</h3><p>Curto, intenso e sem enrolação.</p></div><span>R$ 6,00</span></article>
+              <article class="menu-item" data-kind="cafes"><div><h3>Café coado</h3><p>Uma xícara para acompanhar a conversa.</p></div><span>R$ 7,00</span></article>
+              <article class="menu-item" data-kind="cafes"><div><h3>Cappuccino</h3><p>Café, leite vaporizado e uma pitada de canela.</p></div><span>R$ 12,00</span></article>
+              <article class="menu-item" data-kind="comidas"><div><h3>Pão de queijo</h3><p>Dois pães de queijo servidos quentinhos.</p></div><span>R$ 8,00</span></article>
+              <article class="menu-item" data-kind="comidas"><div><h3>Bolo de cenoura</h3><p>Uma fatia com cobertura de chocolate.</p></div><span>R$ 10,00</span></article>
+              <article class="menu-item" data-kind="comidas"><div><h3>Misto quente</h3><p>Pão tostado, queijo e presunto.</p></div><span>R$ 14,00</span></article>
+              <article class="menu-item" data-kind="gelados"><div><h3>Café gelado</h3><p>Espresso, leite e gelo.</p></div><span>R$ 13,00</span></article>
+              <article class="menu-item" data-kind="gelados"><div><h3>Chocolate gelado</h3><p>Leite e chocolate batidos com gelo.</p></div><span>R$ 12,00</span></article>
+              <article class="menu-item" data-kind="gelados"><div><h3>Chá de hibisco</h3><p>Servido frio, com limão.</p></div><span>R$ 9,00</span></article>
+            </div>
+            <p class="menu-note">Cardápio e preços ilustrativos de um projeto fictício.</p>
+          </section>
+
+          <section class="contact-section" id="contato" aria-labelledby="contact-title">
+            <h2 id="contact-title">Deixe um recado.</h2>
+            <p>Tem uma ideia para esse cardápio? Use o formulário para testar a página. Ele verifica os dados, mas não envia mensagens.</p>
+            <form id="contact-form" novalidate>
+              <div class="field"><label for="name">Nome</label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small></div>
+              <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small></div>
+              <div class="field"><label for="message">Mensagem</label><textarea id="message" name="message" rows="4" required></textarea><small id="message-error" class="error"></small></div>
+              <button class="submit-button" type="submit">Validar recado <span aria-hidden="true">↗</span></button>
+              <p id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </section>
+        </main>
+
+        <footer><span>Intervalo · Projeto fictício para estudo</span><a href="#inicio">Voltar ao início ↑</a></footer>
+      </div>
+    </div>
   </body>
 </html>

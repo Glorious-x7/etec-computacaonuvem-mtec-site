@@ -1,3 +1,23 @@
+const filterButtons = [...document.querySelectorAll('[data-filter]')];
+const menuItems = [...document.querySelectorAll('.menu-item')];
+const menuCount = document.querySelector('#menu-count');
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const chosen = button.dataset.filter;
+    filterButtons.forEach((option) => {
+      const active = option === button;
+      option.classList.toggle('active', active);
+      option.setAttribute('aria-pressed', String(active));
+    });
+    menuItems.forEach((item) => {
+      item.hidden = chosen !== 'todos' && item.dataset.kind !== chosen;
+    });
+    const total = menuItems.filter((item) => !item.hidden).length;
+    menuCount.textContent = `${total} ${total === 1 ? 'opção' : 'opções'} no cardápio`;
+  });
+});
+
 const form = document.querySelector('#contact-form');
 const status = document.querySelector('#form-status');
 
@@ -26,7 +46,7 @@ form.addEventListener('submit', (event) => {
     fields.find((field) => field.getAttribute('aria-invalid') === 'true').focus();
     return;
   }
-  status.textContent = 'Dados válidos! Este formulário é apenas uma demonstração e não envia mensagens.';
+  status.textContent = 'Tudo certo! Este formulário é só uma demonstração e não envia mensagens.';
   form.reset();
   fields.forEach((field) => field.removeAttribute('aria-invalid'));
 });
