@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17392f" />
+    <meta name="description" content="Deixe uma sugestão para o Intervalo. Formulário de demonstração com validação de campos." />
+    <title>Contato — Intervalo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="Intervalo, página inicial"><img src="logo-intervalo.svg" alt="" width="44" height="44" /><span>intervalo<span class="brand-period">.</span></span></a><nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="contato.html" aria-current="page">Contato</a></nav></div></header>
+
+    <main>
+      <section class="page-hero contact-hero"><div class="shell page-hero-inner"><div><p class="section-label">Fale com a gente</p><h1>Tem uma ideia<br />para o Intervalo?</h1></div><p>Uma bebida que faltou, um lanche favorito ou só uma mensagem: escreva por aqui.</p></div></section>
+      <section class="contact-page shell" aria-labelledby="contact-title"><div class="contact-copy"><h2 id="contact-title">Deixe um recado.</h2><p>Este site é um projeto de estudo. O formulário confere se os campos foram preenchidos e se o e-mail é válido, mas não envia a mensagem para ninguém.</p><div class="contact-detail"><span aria-hidden="true">“</span><p>Uma pausa boa também começa com uma boa conversa.</p></div></div>
+        <form id="contact-form" novalidate><div class="field"><label for="name">Seu nome <span>*</span></label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small></div><div class="field"><label for="email">Seu e-mail <span>*</span></label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small></div><div class="field"><label for="message">Mensagem <span>*</span></label><textarea id="message" name="message" rows="5" required></textarea><small id="message-error" class="error"></small></div><button class="button button-primary submit-button" type="submit">Validar recado <span aria-hidden="true">↗</span></button><p id="form-status" role="status" aria-live="polite"></p></form>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="index.html">intervalo<span>.</span></a><p>Um projeto fictício feito para estudar criação de sites.</p><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a></nav></div></footer>
+  </body>
+</html>

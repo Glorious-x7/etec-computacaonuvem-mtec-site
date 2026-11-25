@@ -3,80 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#162d27" />
-    <meta name="description" content="Intervalo: um conceito de cafeteria com cafés, lanches e uma pausa bem servida." />
-    <title>Intervalo — café e pausa</title>
+    <meta name="theme-color" content="#17392f" />
+    <meta name="description" content="Intervalo: café, pão de queijo e uma pausa boa no meio do dia. Projeto fictício de cafeteria." />
+    <title>Intervalo — uma pausa bem servida</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Imbue:opsz,wght@10..100,400;10..100,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="site-layout">
-      <aside class="photo-stage" aria-label="Café e pão de queijo">
-        <img src="hero-cafe.png" alt="Café espresso e pães de queijo sobre um balcão verde" width="1024" height="1536" />
-        <div class="photo-caption"><span>Uma pausa, por favor.</span><span>Intervalo · café</span></div>
-      </aside>
-
-      <div class="page-column">
-        <header class="site-header">
-          <a class="brand" href="#inicio" aria-label="Intervalo, voltar ao início"><span class="pause-mark" aria-hidden="true"><i></i><i></i></span>intervalo<span class="brand-dot">.</span></a>
-          <nav aria-label="Navegação principal"><a href="#cardapio">Cardápio</a><a href="#contato">Contato</a></nav>
-        </header>
-
-        <main>
-          <section class="hero" id="inicio" aria-labelledby="hero-title">
-            <h1 id="hero-title">Uma pausa<br />bem servida.</h1>
-            <p class="hero-copy">Café passado na hora, pão de queijo quentinho e tempo para respirar entre uma tarefa e outra.</p>
-            <a class="text-link" href="#cardapio">Escolher minha pausa <span aria-hidden="true">↗</span></a>
-          </section>
-
-          <section class="intro" aria-labelledby="intro-title">
-            <h2 id="intro-title">Café sem pressa.</h2>
-            <p>O Intervalo é uma cafeteria imaginada para aquela parte do dia em que tudo o que você quer é sentar, tomar um café e conversar um pouco.</p>
-            <p>O cardápio é curto de propósito: bebidas conhecidas, lanches sem complicação e espaço para escolher com calma.</p>
-          </section>
-
-          <section class="menu-section" id="cardapio" aria-labelledby="menu-title">
-            <div class="section-heading"><h2 id="menu-title">Cardápio</h2><p>O que combina com a sua pausa?</p></div>
-            <div class="menu-filters" role="group" aria-label="Filtrar cardápio">
-              <button class="active" type="button" data-filter="todos" aria-pressed="true">Tudo</button>
-              <button type="button" data-filter="cafes" aria-pressed="false">Cafés</button>
-              <button type="button" data-filter="comidas" aria-pressed="false">Para comer</button>
-              <button type="button" data-filter="gelados" aria-pressed="false">Gelados</button>
-            </div>
-            <p class="menu-count" id="menu-count" role="status" aria-live="polite">9 opções no cardápio</p>
-            <div class="menu-list">
-              <article class="menu-item" data-kind="cafes"><div><h3>Espresso</h3><p>Curto, intenso e sem enrolação.</p></div><span>R$ 6,00</span></article>
-              <article class="menu-item" data-kind="cafes"><div><h3>Café coado</h3><p>Uma xícara para acompanhar a conversa.</p></div><span>R$ 7,00</span></article>
-              <article class="menu-item" data-kind="cafes"><div><h3>Cappuccino</h3><p>Café, leite vaporizado e uma pitada de canela.</p></div><span>R$ 12,00</span></article>
-              <article class="menu-item" data-kind="comidas"><div><h3>Pão de queijo</h3><p>Dois pães de queijo servidos quentinhos.</p></div><span>R$ 8,00</span></article>
-              <article class="menu-item" data-kind="comidas"><div><h3>Bolo de cenoura</h3><p>Uma fatia com cobertura de chocolate.</p></div><span>R$ 10,00</span></article>
-              <article class="menu-item" data-kind="comidas"><div><h3>Misto quente</h3><p>Pão tostado, queijo e presunto.</p></div><span>R$ 14,00</span></article>
-              <article class="menu-item" data-kind="gelados"><div><h3>Café gelado</h3><p>Espresso, leite e gelo.</p></div><span>R$ 13,00</span></article>
-              <article class="menu-item" data-kind="gelados"><div><h3>Chocolate gelado</h3><p>Leite e chocolate batidos com gelo.</p></div><span>R$ 12,00</span></article>
-              <article class="menu-item" data-kind="gelados"><div><h3>Chá de hibisco</h3><p>Servido frio, com limão.</p></div><span>R$ 9,00</span></article>
-            </div>
-            <p class="menu-note">Cardápio e preços ilustrativos de um projeto fictício.</p>
-          </section>
-
-          <section class="contact-section" id="contato" aria-labelledby="contact-title">
-            <h2 id="contact-title">Deixe um recado.</h2>
-            <p>Tem uma ideia para esse cardápio? Use o formulário para testar a página. Ele verifica os dados, mas não envia mensagens.</p>
-            <form id="contact-form" novalidate>
-              <div class="field"><label for="name">Nome</label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small></div>
-              <div class="field"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small></div>
-              <div class="field"><label for="message">Mensagem</label><textarea id="message" name="message" rows="4" required></textarea><small id="message-error" class="error"></small></div>
-              <button class="submit-button" type="submit">Validar recado <span aria-hidden="true">↗</span></button>
-              <p id="form-status" role="status" aria-live="polite"></p>
-            </form>
-          </section>
-        </main>
-
-        <footer><span>Intervalo · Projeto fictício para estudo</span><a href="#inicio">Voltar ao início ↑</a></footer>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="index.html" aria-label="Intervalo, página inicial"><img src="logo-intervalo.svg" alt="" width="44" height="44" /><span>intervalo<span class="brand-period">.</span></span></a>
+        <nav aria-label="Navegação principal"><a href="index.html" aria-current="page">Início</a><a href="cardapio.html">Cardápio</a><a href="contato.html">Contato</a></nav>
       </div>
-    </div>
+    </header>
+
+    <main>
+      <section class="home-hero shell" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="hero-overline">O melhor momento do dia pode ser o intervalo.</p>
+          <h1 id="hero-title">Uma pausa<br />bem servida.</h1>
+          <p class="hero-description">Café passado na hora, pão de queijo quentinho e um minuto para respirar antes de voltar à rotina.</p>
+          <div class="hero-actions"><a class="button button-primary" href="cardapio.html">Ver o cardápio <span aria-hidden="true">↗</span></a><a class="text-link" href="contato.html">Deixar um recado</a></div>
+        </div>
+        <figure class="hero-photo"><img src="hero-cafe.png" alt="Uma xícara de café e dois pães de queijo sobre uma mesa verde" width="1024" height="1536" /><figcaption>Café + pão de queijo. Uma boa dupla.</figcaption></figure>
+      </section>
+
+      <section class="home-feature" aria-labelledby="feature-title">
+        <div class="shell feature-grid"><h2 id="feature-title">O que cabe<br />na sua pausa?</h2><div class="feature-copy"><p>Tem dia que pede um espresso rápido. Em outro, dá vontade de sentar com calma e pedir mais uma fatia de bolo.</p><p>O Intervalo é uma cafeteria fictícia criada para celebrar esses momentos simples.</p></div></div>
+      </section>
+
+      <section class="home-preview shell" aria-labelledby="preview-title">
+        <div class="section-intro"><div><p class="section-label">Do cardápio</p><h2 id="preview-title">Três bons começos.</h2></div><a class="text-link" href="cardapio.html">Ver tudo <span aria-hidden="true">↗</span></a></div>
+        <div class="preview-list"><article><span>Para acordar</span><h3>Café coado</h3><p>Uma xícara sem pressa.</p></article><article><span>Para acompanhar</span><h3>Pão de queijo</h3><p>Quentinho, do jeito certo.</p></article><article><span>Para ficar mais um pouco</span><h3>Bolo de cenoura</h3><p>Com cobertura de chocolate.</p></article></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="index.html">intervalo<span>.</span></a><p>Um projeto fictício feito para estudar criação de sites.</p><nav aria-label="Navegação do rodapé"><a href="cardapio.html">Cardápio</a><a href="contato.html">Contato</a></nav></div></footer>
   </body>
 </html>

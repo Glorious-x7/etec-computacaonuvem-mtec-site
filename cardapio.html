@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#17392f" />
+    <meta name="description" content="Conheça o cardápio fictício do Intervalo: cafés, lanches e bebidas geladas." />
+    <title>Cardápio — Intervalo</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&family=DM+Serif+Display&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="Intervalo, página inicial"><img src="logo-intervalo.svg" alt="" width="44" height="44" /><span>intervalo<span class="brand-period">.</span></span></a><nav aria-label="Navegação principal"><a href="index.html">Início</a><a href="cardapio.html" aria-current="page">Cardápio</a><a href="contato.html">Contato</a></nav></div></header>
+
+    <main>
+      <section class="page-hero menu-hero"><div class="shell page-hero-inner"><div><p class="section-label">Cafés, lanches e coisas boas</p><h1>O que vai ser hoje?</h1></div><p>Escolha o que combina com a sua pausa. Nosso cardápio é curto de propósito: fácil de ler, bom de escolher.</p></div></section>
+      <section class="menu-page shell" aria-label="Cardápio do Intervalo">
+        <div class="menu-toolbar"><div class="menu-filters" role="group" aria-label="Filtrar cardápio"><button type="button" data-filter="todos" class="active" aria-pressed="true">Tudo</button><button type="button" data-filter="cafes" aria-pressed="false">Cafés</button><button type="button" data-filter="comidas" aria-pressed="false">Para comer</button><button type="button" data-filter="gelados" aria-pressed="false">Gelados</button></div><p id="menu-count" role="status" aria-live="polite">9 opções no cardápio</p></div>
+
+        <div class="menu-categories">
+          <section class="menu-category" data-category="cafes" aria-labelledby="cafes-title"><div class="category-heading"><h2 id="cafes-title">Cafés</h2><p>O começo de quase todo intervalo.</p></div><div class="menu-list"><article class="menu-item"><div><h3>Espresso</h3><p>Curto, intenso e sem enrolação.</p></div><span>R$ 6,00</span></article><article class="menu-item"><div><h3>Café coado</h3><p>Uma xícara para acompanhar a conversa.</p></div><span>R$ 7,00</span></article><article class="menu-item"><div><h3>Cappuccino</h3><p>Café, leite vaporizado e uma pitada de canela.</p></div><span>R$ 12,00</span></article></div></section>
+          <section class="menu-category" data-category="comidas" aria-labelledby="comidas-title"><div class="category-heading"><h2 id="comidas-title">Para comer</h2><p>Se a fome também pediu uma pausa.</p></div><div class="menu-list"><article class="menu-item"><div><h3>Pão de queijo</h3><p>Dois pães de queijo servidos quentinhos.</p></div><span>R$ 8,00</span></article><article class="menu-item"><div><h3>Bolo de cenoura</h3><p>Uma fatia com cobertura de chocolate.</p></div><span>R$ 10,00</span></article><article class="menu-item"><div><h3>Misto quente</h3><p>Pão tostado, queijo e presunto.</p></div><span>R$ 14,00</span></article></div></section>
+          <section class="menu-category" data-category="gelados" aria-labelledby="gelados-title"><div class="category-heading"><h2 id="gelados-title">Gelados</h2><p>Para quando o dia esquenta.</p></div><div class="menu-list"><article class="menu-item"><div><h3>Café gelado</h3><p>Espresso, leite e gelo.</p></div><span>R$ 13,00</span></article><article class="menu-item"><div><h3>Chocolate gelado</h3><p>Leite e chocolate batidos com gelo.</p></div><span>R$ 12,00</span></article><article class="menu-item"><div><h3>Chá de hibisco</h3><p>Servido frio, com limão.</p></div><span>R$ 9,00</span></article></div></section>
+        </div>
+        <p class="menu-note">Cardápio e preços ilustrativos de um projeto fictício.</p>
+      </section>
+      <section class="page-cta"><div class="shell cta-inner"><h2>Faltou alguma coisa?</h2><a class="button button-light" href="contato.html">Deixe uma sugestão <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="footer-brand" href="index.html">intervalo<span>.</span></a><p>Um projeto fictício feito para estudar criação de sites.</p><nav aria-label="Navegação do rodapé"><a href="index.html">Início</a><a href="contato.html">Contato</a></nav></div></footer>
+  </body>
+</html>
