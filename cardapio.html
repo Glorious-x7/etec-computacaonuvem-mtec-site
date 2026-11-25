@@ -28,6 +28,8 @@
         </div>
         <p class="menu-note">Cardápio e preços ilustrativos de um projeto fictício.</p>
       </section>
+      <div class="cart-bar" id="cart-bar" hidden><div class="shell cart-bar-inner"><span id="cart-summary">0 itens no carrinho</span><button type="button" id="open-cart">Ver carrinho <strong id="cart-total-short">R$ 0,00</strong></button></div></div>
+      <dialog id="cart-dialog" aria-labelledby="cart-title"><div class="cart-dialog-head"><div><p class="section-label">Seu pedido</p><h2 id="cart-title">Carrinho</h2></div><button type="button" id="close-cart" aria-label="Fechar carrinho">Fechar ×</button></div><div id="cart-items"></div><div class="cart-dialog-foot"><p>Total <strong id="cart-total">R$ 0,00</strong></p><small>Pedido de demonstração: não há cobrança nem entrega real.</small><button type="button" id="finish-order" class="button button-primary">Concluir pedido de demonstração</button><p id="order-status" role="status" aria-live="polite"></p></div></dialog>
       <section class="page-cta"><div class="shell cta-inner"><h2>Faltou alguma coisa?</h2><a class="button button-light" href="contato.html">Deixe uma sugestão <span aria-hidden="true">↗</span></a></div></section>
     </main>
 
