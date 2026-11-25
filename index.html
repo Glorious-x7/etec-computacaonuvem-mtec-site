@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Um guia breve e visual para começar a estudar computação em nuvem." />
-    <title>Comece pela nuvem — Guia de estudo</title>
+    <meta name="description" content="Entenda a nuvem com exemplos do Drive, GitHub e Render e veja como publicar seu primeiro site." />
+    <title>Nuvem na prática — Guia de estudo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet" />
@@ -15,39 +15,39 @@
     <main>
       <section class="cover" aria-labelledby="page-title">
         <div class="sheet cover-sheet">
-          <div class="sheet-top"><span>Caderno de estudos</span><span>ETEC · MTEC</span></div>
-          <h1 id="page-title">Comece<br />pela nuvem.</h1>
-          <p>Um roteiro curto para entender o que é computação em nuvem e dar os primeiros passos com segurança.</p>
-          <div class="cover-bottom"><span>Aprenda uma ideia de cada vez.</span><a class="button" href="#roteiro">Abrir o roteiro <span aria-hidden="true">↗</span></a></div>
+          <div class="sheet-top"><span>Computação em nuvem</span><span>ETEC · MTEC</span></div>
+          <h1 id="page-title">Nuvem<br />na prática.</h1>
+          <p>Do arquivo salvo no Drive ao primeiro site no Render: um caminho simples para entender como a nuvem funciona.</p>
+          <div class="cover-bottom"><a class="button" href="#intro-title">Começar a ler <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
 
       <section class="intro wrap" aria-labelledby="intro-title">
-        <h2 id="intro-title">O que é a nuvem?</h2>
-        <p>É usar recursos de computação pela internet, como armazenamento e servidores, sem precisar manter tudo no seu próprio computador. Você escolhe o que precisa e acessa quando precisa.</p>
+        <h2 id="intro-title">Você já usa a nuvem.</h2>
+        <p>Quando abre um trabalho salvo no Drive pelo celular, usa um serviço que guarda seus arquivos na internet. Com um site acontece algo parecido: os arquivos ficam disponíveis em um servidor para qualquer pessoa acessar pelo link.</p>
         <div class="facts" aria-label="Ideias principais">
-          <div><strong>Armazenar</strong><span>Arquivos disponíveis em diferentes dispositivos.</span></div>
-          <div><strong>Executar</strong><span>Aplicações rodando em servidores remotos.</span></div>
-          <div><strong>Escalar</strong><span>Mais recursos quando o uso aumenta.</span></div>
+          <div><strong>Drive</strong><span>Guarda seus arquivos para abrir em outros dispositivos.</span></div>
+          <div><strong>GitHub</strong><span>Guarda o código e registra cada mudança do projeto.</span></div>
+          <div><strong>Render</strong><span>Publica o site e atualiza quando chega código novo.</span></div>
         </div>
       </section>
 
       <section id="roteiro" class="route" aria-labelledby="route-title">
         <div class="sheet route-sheet">
-          <p class="sheet-kicker">Plano de estudo</p>
-          <h2 id="route-title">Três passos para começar</h2>
+          <p class="sheet-kicker">Agora é sua vez</p>
+          <h2 id="route-title">Do código ao link</h2>
           <ol>
-            <li><div><h3>Entenda os serviços</h3><p>Compare armazenamento, servidores e bancos de dados. Pense em um exemplo real para cada um.</p></div><span>01</span></li>
-            <li><div><h3>Observe a segurança</h3><p>Use senhas fortes e autenticação em duas etapas. Descubra quem pode acessar os seus arquivos.</p></div><span>02</span></li>
-            <li><div><h3>Publique um projeto</h3><p>Envie seu código ao GitHub, publique um site estático e faça uma alteração para acompanhar a atualização.</p></div><span>03</span></li>
+            <li><div><h3>Monte a página</h3><p>Comece com HTML, CSS e JavaScript. Abra o arquivo no navegador e veja o que precisa ajustar.</p></div><span>01</span></li>
+            <li><div><h3>Envie ao GitHub</h3><p>Crie um repositório e faça commits para guardar as mudanças do site.</p></div><span>02</span></li>
+            <li><div><h3>Publique no Render</h3><p>Conecte o repositório e confira o endereço público do seu site.</p></div><span>03</span></li>
           </ol>
-          <p class="route-end">Aprender funciona melhor quando você testa uma ideia de cada vez.</p>
+          <p class="route-end">Depois, mude uma frase, faça push e veja o Render atualizar a página.</p>
         </div>
       </section>
 
       <section id="contato" class="contact" aria-labelledby="contact-title">
         <div class="wrap contact-layout">
-          <div><p class="sheet-kicker">Sua vez</p><h2 id="contact-title">Ficou alguma dúvida?</h2><p>Escreva uma pergunta para praticar o preenchimento do formulário. Esta demonstração valida os dados no navegador; nenhuma mensagem é enviada.</p></div>
+          <div><p class="sheet-kicker">Teste o formulário</p><h2 id="contact-title">Ficou alguma dúvida?</h2><p>Preencha os campos para testar a validação. O site avisa se faltar alguma coisa ou se o e-mail estiver errado. A mensagem não é enviada.</p></div>
           <form id="contact-form" novalidate>
             <label for="name">Nome</label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small>
             <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small>
@@ -58,6 +58,6 @@
         </div>
       </section>
     </main>
-    <footer><span>Guia de estudo · Computação em nuvem</span><a href="#page-title">Voltar ao início ↑</a></footer>
+    <footer><span>Projeto de estudo · ETEC MTEC</span><a href="#page-title">Voltar ao início ↑</a></footer>
   </body>
 </html>
