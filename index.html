@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Um guia breve e visual para começar a estudar computação em nuvem." />
+    <title>Comece pela nuvem — Guia de estudo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@700;800&family=Literata:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="cover" aria-labelledby="page-title">
+        <div class="sheet cover-sheet">
+          <div class="sheet-top"><span>Caderno de estudos</span><span>ETEC · MTEC</span></div>
+          <h1 id="page-title">Comece<br />pela nuvem.</h1>
+          <p>Um roteiro curto para entender o que é computação em nuvem e dar os primeiros passos com segurança.</p>
+          <div class="cover-bottom"><span>Leia no seu ritmo.</span><a class="button" href="#roteiro">Abrir o roteiro <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="intro wrap" aria-labelledby="intro-title">
+        <h2 id="intro-title">O que é a nuvem?</h2>
+        <p>É usar recursos de computação pela internet, como armazenamento e servidores, sem precisar manter tudo no seu próprio computador. Você escolhe o que precisa e acessa quando precisa.</p>
+        <div class="facts" aria-label="Ideias principais">
+          <div><strong>Armazenar</strong><span>Arquivos disponíveis em diferentes dispositivos.</span></div>
+          <div><strong>Executar</strong><span>Aplicações rodando em servidores remotos.</span></div>
+          <div><strong>Escalar</strong><span>Mais recursos quando o uso aumenta.</span></div>
+        </div>
+      </section>
+
+      <section id="roteiro" class="route" aria-labelledby="route-title">
+        <div class="sheet route-sheet">
+          <p class="sheet-kicker">Plano de estudo</p>
+          <h2 id="route-title">Três passos para começar</h2>
+          <ol>
+            <li><div><h3>Entenda os serviços</h3><p>Compare armazenamento, servidores e bancos de dados. Pense em um exemplo real para cada um.</p></div><span>01</span></li>
+            <li><div><h3>Observe a segurança</h3><p>Use senhas fortes e autenticação em duas etapas. Descubra quem pode acessar os seus arquivos.</p></div><span>02</span></li>
+            <li><div><h3>Publique um projeto</h3><p>Envie seu código ao GitHub, publique um site estático e faça uma alteração para acompanhar a atualização.</p></div><span>03</span></li>
+          </ol>
+          <p class="route-end">Aprender funciona melhor quando você testa uma ideia de cada vez.</p>
+        </div>
+      </section>
+
+      <section id="contato" class="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-layout">
+          <div><p class="sheet-kicker">Sua vez</p><h2 id="contact-title">Ficou alguma dúvida?</h2><p>Escreva uma pergunta para praticar o preenchimento do formulário. Esta demonstração valida os dados no navegador; nenhuma mensagem é enviada.</p></div>
+          <form id="contact-form" novalidate>
+            <label for="name">Nome</label><input id="name" name="name" autocomplete="name" required /><small id="name-error" class="error"></small>
+            <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required /><small id="email-error" class="error"></small>
+            <label for="message">Mensagem</label><textarea id="message" name="message" rows="5" required></textarea><small id="message-error" class="error"></small>
+            <button class="button" type="submit">Validar mensagem <span aria-hidden="true">↗</span></button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer><span>Guia de estudo · Computação em nuvem</span><a href="#page-title">Voltar ao início ↑</a></footer>
+  </body>
+</html>
